@@ -10,7 +10,9 @@
 </head>
 <body>
 
+<%int codigo = (int) request.getAttribute("codigo"); %>
 
+<%= codigo %>
 
 </body>
 </html>

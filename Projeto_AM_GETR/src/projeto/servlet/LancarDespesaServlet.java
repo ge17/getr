@@ -50,6 +50,11 @@ public class LancarDespesaServlet extends HttpServlet {
 		
 		despesaBO.inserir(despesa);	
 		
+		request.setAttribute("codigo", despesa.getCdDespesa());
+		
+		request.getRequestDispatcher("listarDespesa.jsp").forward(request, response);
+		
+		
 	}
 
 }
